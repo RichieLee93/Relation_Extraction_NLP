@@ -93,3 +93,38 @@ Use the `i2r.relation_extraction.train` script to train a relation extraction mo
 - `m1_char_count`:
 - `m2_char_count`:
 - `punctuation_marks_in_between_mentions`:
+#### POS Tagging Features `POSFeaturesTransformer`
+
+- `pos_tag_of_m1`:
+- `pos_tag_of_m2`:
+- `m1_before_pos`:
+- `m1_2_before_pos`:
+- `m1_after_pos`:
+- `m1_2_after_pos`:
+- `m2_before_pos`:
+- `m2_2_before_pos`:
+- `m2_after_pos`:
+- `m2_2_after_pos`:
+
+#### Dependency Parsing Features `DependencyFeaturesTransformer`
+
+- `m1_parent_nodes`:
+- `m2_parent_nodes`:
+- `common_parent`:
+- `m1_to_common_parent`:
+- `m2_to_common_parent`:
+- `dependency_head_path`:
+- `dependency_child_path`:
+- `dependency_relation_path`:
+- `relative_distance1`:
+- `relative_distance2`:
+
+#### Word Embedding Features `WordembeddingFeaturesTransformer`
+
+- `word_embedding_of_m1`:
+- `word_embedding_of_m2`:
+- `avg_word_embedding_in_between`:
+- `avg_word_embedding_in_front`:
+- `avg_word_embedding_behind`:
+
+
