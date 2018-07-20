@@ -65,7 +65,7 @@ for i in range(len(pos_tags)):
         if pos_tags[i][j] in postag_set:
             pos_tags[i][j] = postag_set.index( pos_tags[i][j])+1
         else:
-            pos_tags[i][j] = 42
+            pos_tags[i][j] = len(postag_Set) + 1
 
 pos_tags = np.array(pos_tags)
 pos_tags = pad_sequences(pos_tags,maxlen=MAX_SEQUENCE_LENGTH)
